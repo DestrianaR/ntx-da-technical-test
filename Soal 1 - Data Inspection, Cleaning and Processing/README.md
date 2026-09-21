@@ -21,45 +21,25 @@ This challenge assesses your ability to:
 
 ## Dataset Overview
 
-| Item     | Detail                       |
-| -------- | ---------------------------- |
-| File     | `sales_transactions_raw.csv` |
-| Grain    | One row = one order line     |
-| Size     | ~7,300 rows × 15 columns     |
-| Period   | September 2024 – August 2026 |
-| Currency | Indonesian Rupiah (IDR)      |
-
 ### Data Dictionary
 
-| Column          | Description                                        | Expected Type                                      |
-| --------------- | -------------------------------------------------- | -------------------------------------------------- |
-| `order_id`      | Order identifier                                   | string                                             |
-| `order_date`    | Date the order was placed                          | date                                               |
-| `region`        | Region of the sale                                 | string                                             |
-| `channel`       | Sales channel (Online / Offline)                   | string                                             |
-| `customer_id`   | Customer identifier                                | string                                             |
-| `customer_type` | Customer segment (Retail, UMKM, Korporat)          | string                                             |
-| `sales_rep`     | Sales representative code                          | string                                             |
-| `category`      | Product category                                   | string                                             |
-| `product`       | Product name                                       | string                                             |
-| `qty`           | Quantity ordered                                   | integer                                            |
-| `discount`      | Discount applied to the line                       | float, fraction between 0 and 1 (e.g. `0.05` = 5%) |
-| `status`        | Order status: `Completed`, `Cancelled`, `Returned` | string                                             |
-| `unit_price`    | List price per unit (IDR)                          | float                                              |
-| `revenue`       | Line revenue after discount (IDR)                  | float                                              |
-| `cost`          | Cost of goods sold for the line (IDR)              | float                                              |
-
-### Business Rules You May Assume
-
-- `revenue = qty × unit_price × (1 − discount)`
-- `gross profit = revenue − cost`
-- Each product has a single list price for the whole period.
-- `Cancelled` orders never generated sales.
-- `Returned` lines are recorded as separate return records that offset an earlier sale.
-- Online orders are processed by the system, not by an individual sales representative.
-- Any other assumption you make must be **stated explicitly** in your notebook.
-
-> The dataset comes straight from the source system. Do not assume it is clean.
+| Column          | Description                                                                    |
+| --------------- | ------------------------------------------------------------------------------ |
+| `order_id`      | Order identifier                                                               |
+| `order_date`    | Date the order was placed                                                      |
+| `region`        | Region of the sale                                                             |
+| `channel`       | Sales channel (Online / Offline)                                               |
+| `customer_id`   | Customer identifier                                                            |
+| `customer_type` | Customer segment (Retail, UMKM, Korporat)                                      |
+| `sales_rep`     | Sales representative code                                                      |
+| `category`      | Product category                                                               |
+| `product`       | Product name                                                                   |
+| `qty`           | Quantity ordered                                                               |
+| `discount`      | Discount applied to the line, as a fraction between 0 and 1 (e.g. `0.05` = 5%) |
+| `status`        | Order status: `Completed`, `Cancelled`, `Returned`                             |
+| `unit_price`    | List price per unit (IDR)                                                      |
+| `revenue`       | Line revenue after discount (IDR)                                              |
+| `cost`          | Cost of goods sold for the line (IDR)                                          |
 
 ## Tasks
 
@@ -76,8 +56,6 @@ Complete all tasks in a single Python notebook (`pandas` is expected; other libr
 1. Apply a treatment for each issue listed in Task 1: standardise, fix, impute, flag, or remove.
 2. Justify each decision: why fix vs. drop vs. flag? What assumption did you rely on? What is the risk if that assumption is wrong?
 3. Keep an **audit trail**: the number of rows and the total revenue before and after each cleaning step, so every change is traceable (You can use log or just simple print statemnt)
-4. Do not silently delete data. Anything removed or altered in a non-trivial way must be reported (and, where sensible, kept in a separate reject/quarantine table).
-5. The notebook must be re-runnable from top to bottom, starting from the raw file, without manual edits.
 
 ### Task 3 – Data Processing
 

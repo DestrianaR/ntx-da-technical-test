@@ -28,8 +28,6 @@ Please complete the sections below in order.
 
 - Write your queries in the SQL dialect of your chosen engine.
 - Correctness matters, but so does your reasoning. State your assumptions in comments (for example, how you handle ties, `NULL` values, or partial periods).
-- Use CTEs and window functions where they improve readability.
-- Do not modify the source data.
 - For each test case, summarize the key insight that you draw from your query results.
 
 ---
@@ -61,7 +59,7 @@ Using all recorded sales, show the revenue by **category and subcategory** with 
 
 `category`, `subcategory`, `products_sold` (distinct), `units_sold`, `total_revenue` (based on `LineTotal`), and `pct_of_category_revenue`.
 
-Sort by category, then by revenue in descending order. Products without a subcategory must **not** be excluded from the result; label them `Uncategorized`.
+Sort by category, then by revenue in descending order.
 
 ---
 
@@ -72,7 +70,6 @@ Sort by category, then by revenue in descending order. Products without a subcat
 For each territory and each month of **2013**, return `revenue`, `prev_month_revenue`, `mom_growth_pct` (month-over-month growth in %), and the **running total** of revenue.
 
 - January 2013 must be compared with December 2012 rather than returning `NULL` growth.
-- Ensure the query is safe against division by zero.
 - State whether your running total is all-time or year-to-date, and explain your reasoning.
 
 ---
@@ -105,4 +102,4 @@ Submit **a single file named `answer.sql`** containing all of your queries.
 - Provide one query (or one CTE chain) per test case. The entire file must run from top to bottom without errors on your database.
 - Document your assumptions as comments next to the relevant query.
 - Below each query, add a short comment block with the business insight you derived from the results.
-- Optionally, include a brief note on what you would do with more time (for example, data-quality checks or performance improvements).
+- Optionally, you can use docker container for your database
