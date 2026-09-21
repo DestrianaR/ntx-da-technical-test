@@ -11,9 +11,9 @@ We've crafted a set of challenges that we believe will showcase your strengths a
 ### Overview of the Repository:
 
 This repository houses four structured challenge directories: 
-- **Soal 1** - 
-- **Soal 2** - 
-- **Soal 3** - EDA Case
+- **Soal 1** - Data Inspection, Cleaning, and Processing
+- **Soal 2** - Data Analysis
+- **Soal 3** - Dashboard Visualization
 - **Soal 4** - SQL Case
 
 Your task is to delve into three out of these four challenges. We grant you the flexibility to select the challenges that resonate most with your skills and confidence levels. 
