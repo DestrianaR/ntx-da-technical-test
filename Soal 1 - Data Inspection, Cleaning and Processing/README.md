@@ -1,4 +1,4 @@
-# Soal 1 – Data Inspection, Cleaning and Processing
+# Soal 1 - Data Inspection, Cleaning and Processing
 
 ---
 
@@ -10,7 +10,7 @@ Ahead of the upcoming management sales review, the Sales Operations team exporte
 
 You are not expected to know how the data was produced. Inspect it, decide what is wrong, decide how to treat it, and **explain your reasoning** as you would to a colleague who inherits your work.
 
-## Objective
+### Objective
 
 This challenge assesses your ability to:
 
@@ -19,7 +19,15 @@ This challenge assesses your ability to:
 - **Process** the data into a form that is ready for analysis
 - **Communicate** assumptions, trade-offs, and open questions
 
-## Dataset Overview
+---
+
+## Dataset
+
+The dataset is located in this folder:
+
+```
+sales_transactions_raw.csv
+```
 
 ### Data Dictionary
 
@@ -41,23 +49,25 @@ This challenge assesses your ability to:
 | `revenue`       | Line revenue after discount (IDR)                                              |
 | `cost`          | Cost of goods sold for the line (IDR)                                          |
 
+---
+
 ## Tasks
 
 Complete all tasks in a single Python notebook (`pandas` is expected; other libraries are welcome).
 
-### Task 1 – Data Inspection
+### Task 1 - Data Inspection
 
 1. Give an overview of the dataset: shape, data types, missing values, memory footprint, and basic statistics.
 2. Check each column for problems in format, consistency, validity, and plausibility. Include the checks that involve more than one column (e.g. consistency between fields, business rules above).
 3. Check for duplicated records and for records that should not be part of a real sales analysis.
 
-### Task 2 – Data Cleaning
+### Task 2 - Data Cleaning
 
 1. Apply a treatment for each issue listed in Task 1: standardise, fix, impute, flag, or remove.
 2. Justify each decision: why fix vs. drop vs. flag? What assumption did you rely on? What is the risk if that assumption is wrong?
-3. Keep an **audit trail**: the number of rows and the total revenue before and after each cleaning step, so every change is traceable (You can use log or just simple print statemnt)
+3. Keep an **audit trail**: the number of rows and the total revenue before and after each cleaning step, so every change is traceable (you can use a log or a simple print statement).
 
-### Task 3 – Data Processing
+### Task 3 - Data Processing
 
 1. Create analysis-ready fields, for example:
    - Date parts (year, month, quarter, year-month)
@@ -68,24 +78,21 @@ Complete all tasks in a single Python notebook (`pandas` is expected; other libr
    - Net revenue and margin by `region` × `category`
    - Top 10 customers by net revenue
 
+---
+
 ## Deliverables
 
-You will present your work in a **Jupyter Notebook** (or an equivalent environment). Ensure your submission includes the following:
+Place all your work inside the `Soal 1 - Data Inspection, Cleaning and Processing/` folder. Present your work in a **Jupyter Notebook** (or an equivalent environment) that includes:
 
-- **Detailed Documentation**
-  - Explain your thought process at each stage.
+| Deliverable | Description |
+|---|---|
+| **Detailed documentation** | Explain your thought process at each stage. |
+| **Data processing and analysis** | Show data preprocessing steps (cleaning, transformation, aggregation). Implement anomaly detection and discuss findings. |
+| **Final insights and recommendations** | Summarize key findings on top products, anomalies, and profitable locations. Provide recommendations for the client based on the analysis. |
 
-- **Data Processing & Analysis**
-  - Show data preprocessing steps (cleaning, transformation, aggregation).
-  - Implement anomaly detection and discuss findings.
-
-- **Final Insights & Recommendations**
-  - Summarize key findings on top products, anomalies, and profitable locations.
-  - Provide recommendations for the client based on the analysis.
+---
 
 ## Evaluation Criteria
-
-We evaluate your submission on the following aspects :
 
 | Criteria                               | What we look for                                                                              |
 | -------------------------------------- | --------------------------------------------------------------------------------------------- |

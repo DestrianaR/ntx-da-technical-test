@@ -84,30 +84,19 @@ Place all your work inside the `Soal 2 - Data Analysis/` folder:
 |---|---|
 | **Analysis file** | Notebook (`.ipynb`), SQL scripts, or spreadsheet (`.xlsx`) containing your working, findings, and explanations. Another analyst should be able to follow your steps and get the same numbers. |
 | **Executive summary** | Maximum **one page**, as a Markdown or PDF file, written for non-technical management. |
-| **`AI_USAGE.md`** | Required if you used AI tools (see below). |
-
-### AI Usage Policy
-
-You are **allowed** to use AI tools (ChatGPT, Claude, Gemini, Copilot, etc.) on this assessment, under these conditions:
-
-1. Include the **shareable link(s)** to your AI chat sessions in `AI_USAGE.md`. If a link cannot be shared, attach a full export or screenshots instead.
-2. Briefly describe in `AI_USAGE.md` which parts of the work AI helped with.
-3. You must be able to **explain and defend every number and decision** in your submission. AI output that you cannot explain will count against you.
-
-Using AI is not penalised. Using it **uncritically** is. We are especially interested in moments where you checked, questioned, or corrected an AI suggestion.
 
 ---
 
 ## Evaluation Criteria
 
-**What makes a strong submission:**
+### What makes a strong submission
 
 - Every conclusion is backed by numbers from the data, not by general statements.
 - The story is connected: what happened → why → what next → what to do.
 - Assumptions and limitations are stated openly.
 - Numbers in the executive summary match the numbers in the analysis file.
 
-**What weakens a submission:**
+### What weakens a submission
 
 - Describing charts without explaining what they mean for the business.
 - Generic recommendations such as "increase marketing" without evidence or estimated impact.

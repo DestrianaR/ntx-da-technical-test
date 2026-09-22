@@ -8,7 +8,7 @@ We've crafted a set of challenges that we believe will showcase your strengths a
 
 ---
 
-### Overview of the Repository:
+## Overview of the Repository
 
 This repository houses four structured challenge directories: 
 - **Soal 1** - Data Inspection, Cleaning, and Processing
@@ -22,7 +22,7 @@ For each challenge, you'll find an in-depth `README.md` within its respective fo
 
 **Deadline**: Please ensure your solutions are submitted 1 week after you receive the test.
 
-### Submission Guidelines:
+## Submission Guidelines
 
 1. **Cloning**: Initiate your journey by cloning this repository to your local machine or preferred development environment.
 
@@ -31,6 +31,17 @@ For each challenge, you'll find an in-depth `README.md` within its respective fo
 3. **Committing Your Solutions**: Once a challenge is completed, commit your changes, ensuring that you've included clear commit messages describing your progress.
 
 4. **Final Push**: After wrapping up all the challenges, push your solutions back to the cloned repository. Please ensure that all your work is clearly labeled and structured within the respective challenge folders.
+
+## AI Usage Policy
+
+You are **allowed** to use AI tools (ChatGPT, Claude, Gemini, Copilot, etc.) on every challenge in this assessment, under these conditions:
+
+1. Add one `AI_USAGE.md` file at the root of this repository if you used AI tools on any challenge.
+2. Include the **shareable link(s)** to your AI chat sessions in `AI_USAGE.md`. If a link cannot be shared, attach a full export or screenshots instead.
+3. Briefly describe in `AI_USAGE.md` which parts of the work AI helped with, per challenge.
+4. You must be able to **explain and defend every number and decision** in your submission, including design decisions. AI output that you cannot explain will count against you.
+
+Using AI is not penalised. Using it **uncritically** is. We are especially interested in moments where you checked, questioned, or corrected an AI suggestion.
 
 ---
 

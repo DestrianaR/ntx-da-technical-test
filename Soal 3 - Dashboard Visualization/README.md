@@ -81,31 +81,19 @@ Place all your work inside the `Soal 3 - Dashboard Visualization/` folder:
 | **Dashboard** | The source file (e.g. `.pbix`, `.twbx`, `.xlsx`, `.py`) **or** a public link written in `DESIGN_NOTES.md`. If you use a link, make sure it is accessible without login. |
 | **Screenshots** | A PDF or PNG export of **every page** of the dashboard, so reviewers can see it without installing any software. |
 | **`DESIGN_NOTES.md`** | Maximum **one page**: who the users are, which KPIs you chose and why, key design decisions, data preparation assumptions, and your three to five insights. |
-| **`AI_USAGE.md`** | Required if you used AI tools (see below). |
-
-No slide presentation is required.
-
-### AI Usage Policy
-
-You are **allowed** to use AI tools (ChatGPT, Claude, Gemini, Copilot, etc.) on this assessment, under these conditions:
-
-1. Include the **shareable link(s)** to your AI chat sessions in `AI_USAGE.md`. If a link cannot be shared, attach a full export or screenshots instead.
-2. Briefly describe in `AI_USAGE.md` which parts of the work AI helped with.
-3. You must be able to **explain and defend every number and design decision** in your submission. AI output that you cannot explain will count against you.
-
-Using AI is not penalised. Using it **uncritically** is. We are especially interested in moments where you checked, questioned, or corrected an AI suggestion.
 
 ---
 
 ## Evaluation Criteria
-**What makes a strong submission:**
+
+### What makes a strong submission
 
 - A user can answer "How are we doing, and where should we look?" within a few minutes.
 - Every chart has a clear purpose; nothing is there just to fill space.
 - Comparisons have context (e.g. against last year or against other regions), not just a single number.
 - Numbers on the dashboard match the numbers in the design notes.
 
-**What weakens a submission:**
+### What weakens a submission
 
 - Too many charts on one page, or charts that need explanation to be understood.
 - Wrong or inconsistent numbers, or totals that do not match between pages.

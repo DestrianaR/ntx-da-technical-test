@@ -1,6 +1,8 @@
-# SQL Interview Test — Data Analyst
+# Soal 4 - SQL Case
 
-## Context
+---
+
+## Background
 
 This assessment is designed for the Data Analyst position. It uses the **AdventureWorks** dataset, which represents a company that manufactures and sells bicycles, components, clothing, and accessories. The company serves two types of customers: **stores** (resellers, B2B) and **individuals** (B2C, primarily online).
 
@@ -14,25 +16,30 @@ In this scenario, stakeholders from Finance, Merchandising, Sales, and the CEO's
 | **Duration**    | Approximately 60–75 minutes                                      |
 | **Total score** | 100 points                                                       |
 
-## Instruction
+---
 
-Please complete the sections below in order.
+## Dataset
 
-### 1. Set Up
+All CSV files are located in the `datasets/` folder inside this folder.
 
-**Database:** Choose any SQL database engine you are comfortable with.
+**Setup:**
 
-**Data loading:** Ingest all CSV files from the `/dataset` folder into your database.
+- **Database:** Choose any SQL database engine you are comfortable with. Optionally, you can run it in a Docker container.
+- **Data loading:** Ingest all CSV files from the `datasets/` folder into your database.
 
-**Ground rules**
+---
+
+## Tasks
+
+Complete the test cases below in order.
+
+**Ground rules:**
 
 - Write your queries in the SQL dialect of your chosen engine.
 - Correctness matters, but so does your reasoning. State your assumptions in comments (for example, how you handle ties, `NULL` values, or partial periods).
 - For each test case, summarize the key insight that you draw from your query results.
 
----
-
-### 2. Test Case 1 — Aggregation & Basic Analysis (20 pts)
+### Test Case 1 - Aggregation & Basic Analysis (20 pts)
 
 **Scenario:** The Finance team would like an overview of how sales performed in 2013.
 
@@ -49,9 +56,7 @@ Build a monthly sales summary for **2013** with the following columns:
 
 Sort the results by month and round monetary values to two decimal places.
 
----
-
-### 3. Test Case 2 — Join (25 pts)
+### Test Case 2 - Join (25 pts)
 
 **Scenario:** The Merchandising team is reviewing the performance of the product catalog.
 
@@ -61,9 +66,7 @@ Using all recorded sales, show the revenue by **category and subcategory** with 
 
 Sort by category, then by revenue in descending order.
 
----
-
-### 4. Test Case 3 — Analytical Thinking & Window Functions (30 pts)
+### Test Case 3 - Analytical Thinking & Window Functions (30 pts)
 
 **Scenario:** Sales leadership wants to understand how each territory is trending over time.
 
@@ -72,9 +75,7 @@ For each territory and each month of **2013**, return `revenue`, `prev_month_rev
 - January 2013 must be compared with December 2012 rather than returning `NULL` growth.
 - State whether your running total is all-time or year-to-date, and explain your reasoning.
 
----
-
-### 5. Test Case 4 — Business Analysis (25 pts)
+### Test Case 4 - Business Analysis (25 pts)
 
 **Scenario:** The CEO asks: _"Are we retaining customers, and where does our revenue really come from?"_
 
@@ -82,7 +83,24 @@ Group customers by the **year of their first order** (cohort) and by `customer_t
 
 ---
 
-### 6. Evaluation
+## Deliverables
+
+Place all your work inside the `Soal 4 - SQL Case/` folder:
+
+| Deliverable | Description |
+|---|---|
+| **`answer.sql`** | A single file containing all of your queries. |
+
+Rules for `answer.sql`:
+
+- Label each answer with a comment, for example `-- Test Case 1`.
+- Provide one query (or one CTE chain) per test case. The entire file must run from top to bottom without errors on your database.
+- Document your assumptions as comments next to the relevant query.
+- Below each query, add a short comment block with the business insight you derived from the results.
+
+---
+
+## Evaluation Criteria
 
 | Area                    | What a strong answer demonstrates                                                                             |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -91,15 +109,3 @@ Group customers by the **year of their first order** (cohort) and by `customer_t
 | **Edge cases**          | Handling of ties, `NULL` and empty values, division by zero, and partial periods                              |
 | **Analytical thinking** | Clearly stated assumptions, sanity-checked results, and awareness of whether numbers are comparable           |
 | **Communication**       | Clear aliases, helpful comments, and a concise business insight                                               |
-
----
-
-### 7. Submission
-
-Submit **a single file named `answer.sql`** containing all of your queries.
-
-- Label each answer with a comment, for example `-- Test Case 1`.
-- Provide one query (or one CTE chain) per test case. The entire file must run from top to bottom without errors on your database.
-- Document your assumptions as comments next to the relevant query.
-- Below each query, add a short comment block with the business insight you derived from the results.
-- Optionally, you can use docker container for your database
