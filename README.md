@@ -36,9 +36,9 @@ For each challenge, you'll find an in-depth `README.md` within its respective fo
 
 You are **allowed** to use AI tools (ChatGPT, Claude, Gemini, Copilot, etc.) on every challenge in this assessment, under these conditions:
 
-1. Add one `AI_USAGE.md` file at the root of this repository if you used AI tools on any challenge.
+1. Add an `AI_USAGE.md` file inside the folder of each challenge where you used AI tools.
 2. Include the **shareable link(s)** to your AI chat sessions in `AI_USAGE.md`. If a link cannot be shared, attach a full export or screenshots instead.
-3. Briefly describe in `AI_USAGE.md` which parts of the work AI helped with, per challenge.
+3. Briefly describe in `AI_USAGE.md` which parts of the work AI helped with.
 4. You must be able to **explain and defend every number and decision** in your submission, including design decisions. AI output that you cannot explain will count against you.
 
 Using AI is not penalised. Using it **uncritically** is. We are especially interested in moments where you checked, questioned, or corrected an AI suggestion.
