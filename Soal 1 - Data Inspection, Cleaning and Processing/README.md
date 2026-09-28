@@ -53,30 +53,19 @@ sales_transactions_raw.csv
 
 ## Tasks
 
-Complete all tasks in a single Python notebook (`pandas` is expected; other libraries are welcome).
+Complete all tasks in a single Python notebook.
 
-### Task 1 - Data Inspection
-
-1. Give an overview of the dataset: shape, data types, missing values, memory footprint, and basic statistics.
-2. Check each column for problems in format, consistency, validity, and plausibility. Include the checks that involve more than one column (e.g. consistency between fields, business rules above).
-3. Check for duplicated records and for records that should not be part of a real sales analysis.
-
-### Task 2 - Data Cleaning
-
-1. Apply a treatment for each issue listed in Task 1: standardise, fix, impute, flag, or remove.
-2. Justify each decision: why fix vs. drop vs. flag? What assumption did you rely on? What is the risk if that assumption is wrong?
-3. Keep an **audit trail**: the number of rows and the total revenue before and after each cleaning step, so every change is traceable (you can use a log or a simple print statement).
-
-### Task 3 - Data Processing
-
-1. Create analysis-ready fields, for example:
-   - Date parts (year, month, quarter, year-month)
-   - Net revenue and gross profit that correctly handle returns
-   - Gross margin (%)
-2. Produce the following summary tables from the cleaned data:
-   - Monthly net revenue, gross profit, and margin %
-   - Net revenue and margin by `region` × `category`
-   - Top 10 customers by net revenue
+1. **Inspect** the dataset. Find out whether it can be trusted, and support what you find with evidence.
+2. **Clean** it. Decide what to do about what you found, and be ready to defend those decisions.
+3. **Process** it so the analysis team can use it for the sales review:
+   - Create analysis-ready fields, such as:
+     - Date parts (year, month, quarter, year-month)
+     - Net revenue and gross profit that correctly handle returns
+     - Gross margin (%)
+   - Produce the following summary tables from the cleaned data:
+     - Monthly net revenue, gross profit, and margin %
+     - Net revenue and margin by `region` × `category`
+     - Top 10 customers by net revenue
 
 ---
 
@@ -84,31 +73,27 @@ Complete all tasks in a single Python notebook (`pandas` is expected; other libr
 
 Place all your work inside the `Soal 1 - Data Inspection, Cleaning and Processing/` folder. Present your work in a **Jupyter Notebook** (or an equivalent environment) that includes:
 
-| Deliverable | Description |
-|---|---|
-| **Detailed documentation** | Explain your thought process at each stage. |
-| **Data processing and analysis** | Show data preprocessing steps (cleaning, transformation, aggregation). Implement anomaly detection and discuss findings. |
-| **Final insights and recommendations** | Summarize key findings on top products, anomalies, and profitable locations. Provide recommendations for the client based on the analysis. |
+| Deliverable                      | Description                                                                                    |
+| -------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Documentation**                | Explain your thought process and assumptions.                                                  |
+| **Data processing and analysis** | Show how you got from the raw data to the final data. Surface anything unusual and discuss it. |
+| **Insights and recommendations** | Summarize what the data tells you and what the client should do about it.                      |
 
 ---
 
 ## Evaluation Criteria
 
-| Criteria                               | What we look for                                                                              |
-| -------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Inspection thoroughness                | Systematic checks, including cross-column and business-rule checks; issues backed by evidence |
-| Cleaning correctness and justification | Right treatment for each issue, explicit assumptions, no unjustified data loss                |
-| Processing and feature quality         | Correct metrics (especially returns), useful summaries                                        |
-| Code quality and reproducibility       | Readable, modular, re-runnable, sensible use of pandas                                        |
-| Communication                          | Clear narrative, concise documentation, honest about uncertainty                              |
+| Criteria      | What we look for                                   |
+| ------------- | -------------------------------------------------- |
+| Inspection    | Depth and rigour, with findings backed by evidence |
+| Cleaning      | Sound, justified decisions                         |
+| Processing    | Correct and useful metrics and summaries           |
+| Code quality  | Readable and reproducible                          |
+| Communication | Clear narrative and honesty about uncertainty      |
 
 ### What makes a strong submission
 
-- Finds a wide range of data quality issues, including subtle ones that only show up when checking several columns together or against the business rules.
-- Backs every issue with evidence (counts, examples) instead of just stating it.
-- Chooses a treatment for each issue (fix, flag, or remove) and explains why, including the assumption behind it and the risk if that assumption is wrong.
-- Keeps an audit trail of rows and revenue before and after each step, and reports what was removed or changed.
-- Handles returns and cancelled orders correctly in revenue and profit.
-- Uses a notebook that runs top to bottom from the raw file, with clean, commented code.
-- Explains the thought process clearly, states assumptions, and raises open questions honestly.
-- Ends with insights and recommendations that are grounded in the cleaned data.
+- Goes beyond the obvious and backs its claims with evidence.
+- Makes clear decisions and explains the reasoning and assumptions behind them.
+- Runs top to bottom from the raw file.
+- Ends with insights and recommendations grounded in the data.
